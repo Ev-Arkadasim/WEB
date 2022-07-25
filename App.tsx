@@ -1,24 +1,29 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 import { Button, Linking, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import Icon from "react-native-vector-icons/FontAwesome";
 
 
 export default function App() {
-  const [name,setName] = useState('mash')
+  const [passwordVisible, setPasswordVisible] = useState(true);
 
   return (
     <View style={styles.container}>
-      <Text style={styles.textColor}>Vinc App</Text>
-      <TextInput
-        style={styles.mail}
-        placeholder="Email"
-        placeholderTextColor="#04495A"
-      />
-      <TextInput
-        style={styles.password}
-        placeholder="password"
-        placeholderTextColor="#04495A"
-      />
+      <Text style={styles.textColor}>Ev Arkadaşım</Text>
+      <View style={styles.emailPasswordContainer}>
+        <TextInput
+          style={styles.mail}
+          placeholder="Email"
+          placeholderTextColor="#04495A"
+        />
+        <TextInput
+          style={styles.password}
+          placeholder="password"
+          placeholderTextColor="#04495A"
+          secureTextEntry={passwordVisible}
+        /
+        >
+      </View>
       <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText}>Giriş Yap</Text>
       </TouchableOpacity>
@@ -41,18 +46,21 @@ const styles = StyleSheet.create({
     color: "#04495A",
     fontWeight: "bold",
     height: 100,
-    fontSize: 50,
-    fontFamily: "Cochin",
+    fontSize: 40,
     bottom: 50,
+    textShadowColor: "rgba(0, 0, 0, 0.75)",
+    textShadowOffset: { width: -1, height: 1 },
+    textShadowRadius: 7,
   },
   button: {
-    height: 30,
+    height: 40,
     width: 200,
     borderRadius: 10,
-    borderColor: "#DDF1D5",
+    borderColor: "#04495A",
     borderWidth: 1.5,
     backgroundColor: "#008A62",
     alignItems: "center",
+    justifyContent: "center",
   },
   buttonText: {
     color: "#F1F2F6",
@@ -62,22 +70,29 @@ const styles = StyleSheet.create({
   mail: {
     height: 40,
     margin: 12,
-    width: "90%",
-    borderWidth: 1,
-    marginBottom: 10,
+    marginBottom: 1,
     borderRadius: 10,
-    textAlign: "center",
+    padding: 10,
+    textAlign: "left",
     backgroundColor: "#D2D2DB",
+    borderColor: "#04495A",
+    borderWidth: 3,
   },
   password: {
     borderRadius: 10,
     height: 40,
     margin: 12,
-    width: "90%",
-    borderWidth: 1,
     padding: 10,
     marginBottom: 50,
-    textAlign: "center",
+    textAlign: "left",
     backgroundColor: "#D2D2DB",
+    position: "relative",
+    borderColor: "#04495A",
+    borderWidth: 3,
+  },
+  emailPasswordContainer: {
+    width: "90%",
+    display: "flex",
+    flexDirection: "column",
   },
 });

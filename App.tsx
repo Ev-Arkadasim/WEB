@@ -8,7 +8,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.textColor}>Ev Arkadaşım</Text>
+      <Text style={styles.textColor}>Fatih Arkadaşım</Text>
       <View style={styles.emailPasswordContainer}>
         <TextInput
           style={styles.mail}

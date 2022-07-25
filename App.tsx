@@ -1,7 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { Button, Linking, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
-import Icon from "react-native-vector-icons/FontAwesome";
+import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 
 export default function App() {
@@ -58,7 +57,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     borderColor: "#04495A",
     borderWidth: 1.5,
-    backgroundColor: "#008A62",
+    backgroundColor: "#502E8A",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -76,7 +75,7 @@ const styles = StyleSheet.create({
     textAlign: "left",
     backgroundColor: "#D2D2DB",
     borderColor: "#04495A",
-    borderWidth: 3,
+    borderWidth: 2,
   },
   password: {
     borderRadius: 10,
@@ -88,7 +87,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#D2D2DB",
     position: "relative",
     borderColor: "#04495A",
-    borderWidth: 3,
+    borderWidth: 2,
   },
   emailPasswordContainer: {
     width: "90%",

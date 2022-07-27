@@ -1,14 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
-
+import { Linking, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import LoginButton from './LoginButton';
 
 export default function App() {
   const [passwordVisible, setPasswordVisible] = useState(true);
 
   return (
     <View style={styles.container}>
-      <Text style={styles.textColor}>Fatih Arkadaşım</Text>
+      <Text style={styles.textColor}>Ev Arkadaşım</Text>
       <View style={styles.emailPasswordContainer}>
         <TextInput
           style={styles.mail}
@@ -20,12 +19,9 @@ export default function App() {
           placeholder="password"
           placeholderTextColor="#04495A"
           secureTextEntry={passwordVisible}
-        /
-        >
+        />
       </View>
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Giriş Yap</Text>
-      </TouchableOpacity>
+      <LoginButton/>
     </View>
   );
 }
@@ -51,21 +47,7 @@ const styles = StyleSheet.create({
     textShadowOffset: { width: -1, height: 1 },
     textShadowRadius: 7,
   },
-  button: {
-    height: 40,
-    width: 200,
-    borderRadius: 10,
-    borderColor: "#04495A",
-    borderWidth: 1.5,
-    backgroundColor: "#502E8A",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  buttonText: {
-    color: "#F1F2F6",
-    fontSize: 20,
-    fontWeight: "bold",
-  },
+  
   mail: {
     height: 40,
     margin: 12,
@@ -94,4 +76,9 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "column",
   },
+  forgotPasswordRegisterContainer:{
+    position:'absolute',
+    top:'60%',
+    left:'10%'
+  }
 });

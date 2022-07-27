@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     
   },
   emailPasswordContainer: {
-    width: "90%",
+    width: "95%",
     display: "flex",
     flexDirection: "column",
   },

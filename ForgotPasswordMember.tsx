@@ -21,5 +21,6 @@ const styles = StyleSheet.create({
     color: "#0077C2",
     position: "relative",
     fontSize: 14.4,
+
   },
 });

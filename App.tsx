@@ -31,7 +31,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F1F2F6",
+    backgroundColor: "#FFFFFF",
     alignItems: "center",
     justifyContent: "center",
     borderWidth: 3,
@@ -49,29 +49,27 @@ const styles = StyleSheet.create({
     textShadowOffset: { width: -1, height: 1 },
     textShadowRadius: 7,
   },
-  
+
   mail: {
-    height: 40,
+    height: 50,
     margin: 12,
     marginBottom: 1,
-    borderRadius: 10,
+    borderRadius: 6,
     padding: 10,
     textAlign: "left",
-    backgroundColor: "#D2D2DB",
-    borderColor: "#04495A",
-    borderWidth: 2,
+    backgroundColor: "#F5F5F5",
+    
   },
   password: {
-    borderRadius: 10,
-    height: 40,
+    borderRadius: 6,
+    height: 50,
     margin: 12,
     padding: 10,
     marginBottom: 50,
     textAlign: "left",
-    backgroundColor: "#D2D2DB",
+    backgroundColor: "#F5F5F5",
     position: "relative",
-    borderColor: "#04495A",
-    borderWidth: 2,
+    
   },
   emailPasswordContainer: {
     width: "90%",

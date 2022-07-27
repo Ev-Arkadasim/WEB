@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Linking, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import ForgotPasswordMember from './ForgotPasswordMember';
 import LoginButton from './LoginButton';
 
 export default function App() {
@@ -21,7 +22,8 @@ export default function App() {
           secureTextEntry={passwordVisible}
         />
       </View>
-      <LoginButton/>
+      <ForgotPasswordMember/>
+      <LoginButton />
     </View>
   );
 }
@@ -76,9 +78,4 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "column",
   },
-  forgotPasswordRegisterContainer:{
-    position:'absolute',
-    top:'60%',
-    left:'10%'
-  }
 });

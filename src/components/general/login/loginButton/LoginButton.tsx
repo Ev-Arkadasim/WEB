@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   container: {
     width: "50%",
     display: "flex",
-    marginTop: 20,
+    marginTop: 70,
   },
   button: {
     height: 40,

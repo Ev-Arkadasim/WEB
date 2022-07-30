@@ -13,14 +13,12 @@ export default function ForgotPasswordMember() {
 
 const styles = StyleSheet.create({
   forgotPasswordRegisterContainer: {
-    position: "absolute",
-    bottom: 10,
-    right: 30,
+    marginTop: 16,
+    marginLeft:35,
   },
   forgotPasswordButton: {
     color: "#0077C2",
     position: "relative",
     fontSize: 14.4,
-
   },
 });

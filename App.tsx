@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Linking, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import ForgotPasswordMember from './ForgotPasswordMember';
+import LabelContainer from './labelContainer';
 import LoginButton from './LoginButton';
 
 export default function App() {
@@ -10,19 +11,12 @@ export default function App() {
     <View style={styles.container}>
       <Text style={styles.textColor}>Ev Arkadaşım</Text>
       <View style={styles.emailPasswordContainer}>
-        <TextInput
-          style={styles.mail}
-          placeholder="Email"
-          placeholderTextColor="#04495A"
-        />
-        <TextInput
-          style={styles.password}
-          placeholder="password"
-          placeholderTextColor="#04495A"
-          secureTextEntry={passwordVisible}
-        />
+        <LabelContainer placeholder='email'/>
+        <LabelContainer placeholder='password'/>
       </View>
-      <ForgotPasswordMember/>
+      <View style={{ alignSelf: "flex-start" }}>
+        <ForgotPasswordMember />
+      </View>
       <LoginButton />
     </View>
   );
@@ -50,27 +44,6 @@ const styles = StyleSheet.create({
     textShadowRadius: 7,
   },
 
-  mail: {
-    height: 50,
-    margin: 12,
-    marginBottom: 1,
-    borderRadius: 6,
-    padding: 10,
-    textAlign: "left",
-    backgroundColor: "#F5F5F5",
-    
-  },
-  password: {
-    borderRadius: 6,
-    height: 50,
-    margin: 12,
-    padding: 10,
-    marginBottom: 50,
-    textAlign: "left",
-    backgroundColor: "#F5F5F5",
-    position: "relative",
-    
-  },
   emailPasswordContainer: {
     width: "95%",
     display: "flex",

@@ -1,20 +1,23 @@
 import { StyleSheet, Text, View } from "react-native";
-import ForgotPasswordMember from "../general/login/forgotPasswordButton/ForgotPasswordMember";
-import LabelContainer from "../general/login/labelContainer/LabelContainer";
-import LoginButton from "../general/login/loginButton/LoginButton";
+import ForgotPasswordMember from "../../components/general/login/forgotPasswordButton/ForgotPasswordMember";
+import LabelContainer from "../../components/general/login/labelContainer/LabelContainer";
+import LoginButton from "../../components/general/login/loginButton/LoginButton";
 
-export default function ForgotPasswordPage() {
+
+export default function ResetPasswordPage() {
   return (
     <View style={styles.container}>
       <Text style={styles.textColor}>Ev Arkadaşım</Text>
       <View style={styles.emailPasswordContainer}>
         <LabelContainer placeholder="email" />
-        <LabelContainer placeholder="password" />
       </View>
+      <View style={{ alignSelf: "flex-start" }}></View>
       <View style={{ alignSelf: "flex-start" }}>
-        <ForgotPasswordMember/>
+        <ForgotPasswordMember message="Hesabın var mı?" />
       </View>
-      <LoginButton/>
+      <View style={{ width: 500, alignItems: "center" }}>
+        <LoginButton message="Giriş bağlantısı gönder" />
+      </View>
     </View>
   );
 }

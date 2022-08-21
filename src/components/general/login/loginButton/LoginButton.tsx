@@ -1,12 +1,12 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 
-export default function LoginButton() {
+export default function LoginButton(props:any) {
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.button}>
         <Text  style={styles.buttonText}>
-          Giriş Yap
+          {props.message}
         </Text>
       </TouchableOpacity>
     </View>

@@ -1,20 +1,20 @@
 import { StyleSheet, Text, View } from "react-native";
-import ForgotPasswordMember from "../general/login/forgotPasswordButton/ForgotPasswordMember";
-import LabelContainer from "../general/login/labelContainer/LabelContainer";
-import LoginButton from "../general/login/loginButton/LoginButton";
-import NextButton from "../general/login/nextButton/nextButton";
-import RegisterButton from "../general/login/registerButton/registerButton";
+import ForgotPasswordMember from "../../components/general/login/forgotPasswordButton/ForgotPasswordMember";
+import LabelContainer from "../../components/general/login/labelContainer/LabelContainer";
+import LoginButton from "../../components/general/login/loginButton/LoginButton";
 
-export default function ResetPasswordPage() {
+export default function ForgotPasswordPage() {
   return (
     <View style={styles.container}>
       <Text style={styles.textColor}>Ev Arkadaşım</Text>
       <View style={styles.emailPasswordContainer}>
         <LabelContainer placeholder="email" />
+        <LabelContainer placeholder="password" />
       </View>
       <View style={{ alignSelf: "flex-start" }}>
+        <ForgotPasswordMember message='Şifreni mi unuttun?'/>
       </View>
-      <NextButton/>
+      <LoginButton message="Giriş yap" />
     </View>
   );
 }

@@ -1,11 +1,11 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 
-export default function ForgotPasswordMember() {
+export default function ForgotPasswordMember(props:any) {
   return (
     <View>
       <TouchableOpacity style={styles.forgotPasswordRegisterContainer}>
-        <Text style={styles.forgotPasswordButton}>Şifreni mi Unuttun?</Text>
+        <Text style={styles.forgotPasswordButton}>{props.message}</Text>
       </TouchableOpacity>
     </View>
   );

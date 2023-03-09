@@ -1,4 +1,4 @@
-import { View, Text, Pressable, Alert, TextInput } from "react-native";
+import { View, Text, Pressable, Alert, TextInput, Image } from "react-native";
 import React from "react";
 
 const Login = ({ navigation }) => {
@@ -24,7 +24,7 @@ const Login = ({ navigation }) => {
       <View className="flex w-full items-center">
         <View className="w-full items-center">
           <Pressable
-            className="group w-1/2 bg-[#ffffff] border-2 border-solid border-[#4E9678] items-center py-3 rounded-full  active:bg-[#4E9678] active:transition-colors active:duration-1000"
+            className="group w-1/2 bg-[#dce5df] border-2 border-solid border-[#4E9678] items-center py-3 rounded-full  active:bg-[#4E9678] active:transition-colors active:duration-1000"
             style={{
               shadowColor: "black",
               shadowOffset: { width: 0, height: 4 },
@@ -36,15 +36,19 @@ const Login = ({ navigation }) => {
               Alert.alert("Ev Arkadaşım", "Giriş Başarılı");
               setTimeout(() => {
                 navigation.navigate("Home");
-              }, 3000);
+              }, 1000);
             }}
           >
             <Text className="text-xl italic ">LOGIN</Text>
           </Pressable>
         </View>
 
-        <View>
-          <Text></Text>
+        <View className="relative w-auto">
+          <Image
+            resizeMode="contain"
+            className="fixed top-full"
+            source={require("../../assets/spot.png")}
+          />
         </View>
       </View>
     </View>

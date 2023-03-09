@@ -12,7 +12,7 @@ const Homepage = ({ navigation }) => {
       </View>
       <View className="w-full flex flex-col gap-12 items-center">
         <Pressable
-          className="w-1/2 bg-[#4E9678] items-center py-3 rounded-full "
+          className="w-1/2 bg-[#4E9678] items-center py-3 border-solid border border-[#4E9678] rounded-full active:bg-white active:border active:border-solid active:border-[#4E9678] "
           style={{
             shadowColor: "black",
             shadowOffset: { width: 0, height: 4 },
@@ -25,7 +25,7 @@ const Homepage = ({ navigation }) => {
           <Text className="text-xl italic ">LOGIN</Text>
         </Pressable>
         <Pressable
-          className="w-1/2 bg-[#4E9678] items-center py-3 rounded-full "
+          className="w-1/2 bg-[#4E9678] items-center py-3 border-solid border border-[#4E9678] rounded-full active:bg-white active:border active:border-solid active:border-[#4E9678] "
           onPress={() => navigation.navigate("RegisterPage")}
           style={{
             shadowColor: "black",

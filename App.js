@@ -15,9 +15,10 @@ export default function App() {
         screenOptions={{
           title: "",
           cardStyle: {
-            backgroundColor: "#ffffff",
+            backgroundColor: "#dce5df",
           },
           headerTitleStyle: {
+            color: "#dce5df",
             alignItems: "center",
             textAlign: "center",
           },

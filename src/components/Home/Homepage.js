@@ -7,23 +7,35 @@ const Homepage = ({ navigation }) => {
       <View className="w-auto">
         <Image
           resizeMode="contain"
-          source={require("../../../assets/startpage/pngwing1.png")}
+          source={require("../../assets/startpage/pngwing1.png")}
         />
       </View>
       <View className="w-full flex flex-col gap-12 items-center">
-        <Pressable className="w-1/2 bg-[#4E9678] items-center py-3 rounded-full ">
-          <Text
-            className="text-xl italic font-inter"
-            onPress={() => navigation.navigate("LoginPage")}
-          >
-            LOGIN
-          </Text>
+        <Pressable
+          className="w-1/2 bg-[#4E9678] items-center py-3 rounded-full "
+          style={{
+            shadowColor: "black",
+            shadowOffset: { width: 0, height: 4 },
+            shadowRadius: 0,
+            shadowOpacity: 0.2,
+            elevation: 15,
+          }}
+          onPress={() => navigation.navigate("LoginPage")}
+        >
+          <Text className="text-xl italic ">LOGIN</Text>
         </Pressable>
         <Pressable
           className="w-1/2 bg-[#4E9678] items-center py-3 rounded-full "
           onPress={() => navigation.navigate("RegisterPage")}
+          style={{
+            shadowColor: "black",
+            shadowOffset: { width: 0, height: 4 },
+            shadowRadius: 0,
+            shadowOpacity: 0.2,
+            elevation: 15,
+          }}
         >
-          <Text className="text-xl italic font-inter">REGISTER</Text>
+          <Text className="text-xl italic ">REGISTER</Text>
         </Pressable>
       </View>
       <StatusBar backgroundColor="darkgray" />

@@ -7,6 +7,8 @@ import Register from "./src/components/Register/Register";
 import { Button, Text } from "react-native";
 import StartPage from "./src/components/Start/StartPage";
 import Home from "./src/components/Home/Home";
+import ForgotPassword from "./src/components/ForgotPassword/ForgotPassword";
+import ResetPasswordPage from "./src/components/ForgotPassword/ResetPasswordPage";
 
 export default function App() {
   const Stack = createStackNavigator();
@@ -69,6 +71,32 @@ export default function App() {
         <Stack.Screen
           name="HomePage"
           component={Home}
+          options={{
+            headerStyle: {
+              backgroundColor: "#dce5df",
+            },
+            headerTintColor: "#000000",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+          }}
+        />
+        <Stack.Screen
+          name="ForgotPasswordPage"
+          component={ForgotPassword}
+          options={{
+            headerStyle: {
+              backgroundColor: "#dce5df",
+            },
+            headerTintColor: "#000000",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+          }}
+        />
+        <Stack.Screen
+          name="ResetPasswordPage"
+          component={ResetPasswordPage}
           options={{
             headerStyle: {
               backgroundColor: "#dce5df",

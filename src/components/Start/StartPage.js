@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Image, Pressable, StatusBar } from "react-native";
 
-const Homepage = ({ navigation }) => {
+const StartPage = ({ navigation }) => {
   return (
     <View className="flex-1 text-center items-center justify-center gap-y-10">
       <View className="w-auto">
@@ -43,4 +43,4 @@ const Homepage = ({ navigation }) => {
   );
 };
 
-export default Homepage;
+export default StartPage;

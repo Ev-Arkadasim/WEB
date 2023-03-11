@@ -8,7 +8,7 @@ const Login = ({ navigation }) => {
         <View className="flex gap-y-8">
           <TextInput
             placeholder="e-mail"
-            className="w-full placeholder:italic placeholder:tracking-widest border-b border-black no-underline "
+            className="w-full placeholder:italic placeholder:tracking-widest border-b border-gray-400 no-underline "
           />
           <TextInput
             placeholder="password"
@@ -35,7 +35,7 @@ const Login = ({ navigation }) => {
             onPress={() => {
               Alert.alert("Ev Arkadaşım", "Giriş Başarılı");
               setTimeout(() => {
-                navigation.navigate("Home");
+                navigation.navigate("HomePage");
               }, 1000);
             }}
           >
